@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 600px;
+            height: 400px;
+            background-color: red;
+        }
+        .box2{
+            width: 100px;
+            height: 80px;
+            background-color: blueviolet;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: 5;
+        }
+    </style>
+    <style>
+        @keyframes example{
+            0%{
+                transform: translateX(0);
+                left: 0deg;
+                top: 0deg;
+            }
+            25%{
+                transform: translateX(500%);
+                left: 350deg;
+                top: 0deg;
+            }
+            50%{
+                transform: translateX(500%) translateY(400%);
+                left: 350deg;
+                top: 350deg;
+            }
+            75%{
+                transform: translateY(400%);
+                left: 0deg;
+                top: 350deg;
+            }
+            100%{
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
